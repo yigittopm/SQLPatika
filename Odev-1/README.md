@@ -19,3 +19,11 @@ SELECT *
 FROM film
 WHERE rental_rate = 0.99 AND (replacement_cost = 12.99 OR replacement_cost = 28.99);
 ```
+
+### 4- Customer tablosunda bulunan first_name sütunundaki değeri 'Mary' olan müşterinin last_name sütunundaki değeri nedir? (Smith)
+
+```sql
+SELECT first_name, last_name
+FROM customer
+WHERE first_name = 'Mary';
+```
