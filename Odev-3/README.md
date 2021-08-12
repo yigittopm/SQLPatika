@@ -13,3 +13,11 @@ SELECT *
 FROM country
 WHERE LENGTH(country) > 5 AND country LIKE '%n';
 ```
+
+### 3- Film tablosunda bulunan title sütunundaki film isimlerinden en az 4 adet büyük ya da küçük harf farketmesizin 'T' karakteri içeren film isimlerini sıralayınız
+
+```sql
+SELECT title
+FROM film
+WHERE title ILIKE '%T%T%T%T%';
+```
